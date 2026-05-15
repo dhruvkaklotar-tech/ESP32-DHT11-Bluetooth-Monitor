@@ -3,7 +3,7 @@
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino IDE" width="70"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Bluetooth_Symbol_With_Background.svg" alt="Bluetooth" width="70"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bluetooth_Symbol.svg/150px-Bluetooth_Symbol.svg.png" alt="Bluetooth" width="55"/>
 </div>
 
 <br>
@@ -13,6 +13,7 @@ A robust IoT project utilizing the **ESP32 DevKit V1** and a **DHT11 Sensor** to
 ## ✨ Project Features
 - **Real-Time Monitoring:** Captures Temperature (°C/°F), Humidity (%), and calculates the Heat Index.
 - **Reading Counter:** Includes a built-in cycle counter to track exactly how many successful readings have been captured since the device powered on.
+- **Remote Control:** Start and pause the data stream wirelessly using custom START and STOP commands via the mobile app.
 - **Fast Refresh Rate:** System updates and transmits data every 1.5 seconds.
 - **Dual Display Modes:** 
   - Wirelessly via Android smartphone.
@@ -35,10 +36,10 @@ Disconnect the ESP32 from your PC before wiring.
 | DHT11 Pin | ESP32 DevKit V1 Pin | Description |
 | :--- | :--- | :--- |
 | **VCC (+)** | `3V3` | Provides 3.3V power to the sensor. |
-| **DATA (Out)**| `GPIO 4` *(Update if different)* | Sends environmental data to the board. |
+| **DATA (Out)**| `GPIO 4` | Sends environmental data to the board. |
 | **GND (-)** | `GND` | Ground connection. |
 
-*(Note: If you are using a bare DHT11 sensor without a breakout board, you will need a 10kΩ pull-up resistor between VCC and DATA).*
+> **💡 Customization Note:** If you want to connect the sensor's DATA pin to a different GPIO pin on the ESP32, or if you want to change the reading speed (currently set to 1.5 seconds), you **must** update the pin definition and delay values in the `.ino` code file before uploading it to your board.
 
 ---
 
@@ -66,14 +67,28 @@ To flash this code to your ESP32, follow these steps on your computer:
 
 ## 📱 Mobile App Setup (Bluetooth Terminal)
 
-To view the readings wirelessly, this project uses the **Serial Bluetooth Terminal** app.
+To view the readings wirelessly and control the device, this project uses the **Serial Bluetooth Terminal** app.
 
 **App Description:** Serial Bluetooth Terminal by Kai Morich is a highly reliable, line-oriented terminal/console app for microcontrollers. It supports Bluetooth Classic and BLE, making it the perfect tool for monitoring serial outputs directly on your phone.
 
+### Connecting to the ESP32:
 1. Download the app from the Google Play Store: [Serial Bluetooth Terminal by Kai Morich](https://play.google.com/store/apps/details?id=de.kai_morich.serial_bluetooth_terminal).
 2. Power on your ESP32.
-3. Go to your phone's native **Bluetooth Settings** and pair with the device (it will be named `ESP32_DHT11` or whatever you named it in the code).
+3. Go to your phone's native **Bluetooth Settings** and pair with the device.
 4. Open the Serial Bluetooth Terminal app.
 5. Tap the **Menu icon (≡)** in the top left > **Devices** > **Bluetooth Classic**.
 6. Select your ESP32. 
-7. Tap the **Connect icon** (looks like two plugs connecting) at the top of the screen. You will now see your readings and the reading counter updating every 1.5 seconds!
+7. Tap the **Connect icon** (looks like two plugs connecting) at the top of the screen.
+
+### Setting Up the START and STOP Buttons:
+You can use the built-in "Macro" buttons at the bottom of the app to easily send commands to the ESP32.
+1. Once connected, look at the row of buttons at the bottom of the screen (labeled `M1`, `M2`, etc.).
+2. **Long-press** the `M1` button to edit it.
+   - **Name:** Type `START`
+   - **Value:** Type `START`
+   - Tap **Save** (or OK/Checkmark).
+3. **Long-press** the `M2` button to edit it.
+   - **Name:** Type `STOP`
+   - **Value:** Type `STOP`
+   - Tap **Save**.
+4. Now, simply tap the **START** button to begin receiving data, and tap the **STOP** button to pause the readings!
