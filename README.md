@@ -1,7 +1,7 @@
 # 📡 ESP32 & DHT11 Bluetooth Environment Monitor
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Espressif_Systems_logo_and_wordmark.svg" alt="Espressif" height="60"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Espressif_Systems_logo_and_wordmark.svg/512px-Espressif_Systems_logo_and_wordmark.svg.png" alt="Espressif" height="60"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino IDE" height="60"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -94,3 +94,7 @@ You can use the built-in "Macro" buttons at the bottom of the app to easily send
    - **Value:** Type `STOP`
    - Tap **Save**.
 4. Now, simply tap the **START** button to begin receiving data, and tap the **STOP** button to pause the readings!
+
+---
+
+*Remember: 90% of hardware debugging is just finding the loose GND wire. The other 10% is remembering to plug it in. May the magic smoke stay safely inside your ESP32!* 💨🔧
