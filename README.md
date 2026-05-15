@@ -13,7 +13,7 @@
 A robust IoT project utilizing the **ESP32 DevKit V1** and a **DHT11 Sensor** to continuously monitor environmental conditions. The system calculates temperature, humidity, and heat index, updating the data every 1.5 seconds. Readings are transmitted wirelessly via Bluetooth Classic to an Android smartphone and can also be monitored locally via PC.
 
 ## ✨ Project Features
-- **Real-Time Monitoring:** Captures Temperature (°C/°F), Humidity (%), and calculates the Heat Index.
+- **Real-Time Monitoring:** Captures Temperature (°C), Humidity (%), and calculates the Heat Index (°C).
 - **Reading Counter:** Includes a built-in cycle counter to track exactly how many successful readings have been captured since the device powered on.
 - **Remote Control:** Start and pause the data stream wirelessly using custom START and STOP commands via the mobile app.
 - **Fast Refresh Rate:** System updates and transmits data every 1.5 seconds.
