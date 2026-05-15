@@ -1,9 +1,11 @@
 # 📡 ESP32 & DHT11 Bluetooth Environment Monitor
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino IDE" width="70"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bluetooth_Symbol.svg/150px-Bluetooth_Symbol.svg.png" alt="Bluetooth" width="55"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Espressif_Systems_logo_and_wordmark.svg" alt="Espressif" height="60"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino IDE" height="60"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://img.icons8.com/color/144/bluetooth.png" alt="Bluetooth" height="60"/>
 </div>
 
 <br>
