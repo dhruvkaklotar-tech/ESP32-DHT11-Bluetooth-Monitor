@@ -1,11 +1,11 @@
 # 📡 ESP32 & DHT11 Bluetooth Environment Monitor
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Espressif_Systems_logo_and_wordmark.svg/512px-Espressif_Systems_logo_and_wordmark.svg.png" alt="Espressif" height="60"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino IDE" height="60"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://img.icons8.com/color/144/bluetooth.png" alt="Bluetooth" height="60"/>
+  <img src="https://cdn.simpleicons.org/espressif/E50012" alt="Espressif" height="60"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/arduino/00979D" alt="Arduino IDE" height="60"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/bluetooth/0082FC" alt="Bluetooth" height="60"/>
 </div>
 
 <br>
@@ -97,4 +97,4 @@ You can use the built-in "Macro" buttons at the bottom of the app to easily send
 
 ---
 
-*Remember: 90% of hardware debugging is just finding the loose GND wire. The other 10% is remembering to plug it in. May the magic smoke stay safely inside your ESP32!* 💨🔧
+> *"Hardware is simply the part of the computer that you can kick. But remember: 90% of hardware debugging is just finding the loose GND wire... and the other 10% is praying the magic smoke stays safely inside your ESP32!"* 💨🔧
